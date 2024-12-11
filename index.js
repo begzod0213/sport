@@ -92,16 +92,14 @@ bot.on('message', async (msg) => {
     }
 
     const videoReplies = [
+
+
         {
             keyword: '210',
             videoPath: 'https://t.me/jon_uik_kinolar_olami/263',
             caption: 'Kino nomi:Reacher. tili:o`zbek tilida. Hajmi:1092 MB '
         },
-        {
-            keyword: '212',
-            videoPath: ' https://t.me/Umar_ibn_Hattob_seriali/26',
-            caption: 'Kino nomi: Umar ibn Xattob. tili:o`zbek tilida. Hajmi'
-        },
+        
         {
             keyword: '215',
             videoPath: 'https://t.me/kungfu_panda_multik_multfilm/32',
@@ -110,7 +108,7 @@ bot.on('message', async (msg) => {
         {
             keyword: '216',
             videoPath: 'https://t.me/terminator_kino_yulduzlar_jangi/186',
-            caption: 'Bu Node.js dasturlash bo‘yicha darslik.'
+            caption: 'Kino nomi: Creed'
         },
         {
             keyword: '217',
@@ -190,6 +188,7 @@ bot.on('message', async (msg) => {
 
         },
     ];
+
     
     // Foydalanuvchi xabariga javob berish
     bot.on('message', (msg) => {
@@ -215,7 +214,8 @@ bot.on('message', async (msg) => {
 const app = express();
 app.use(bodyParser.json());
 const PORT = process.env.PORT || 3000;
-
+app.listen(PORT, () => {
+    console.log(`Server is running on port ${PORT}`);
 
 //app.listen(PORT, () => {
    // console.log(`Server is running on port ${PORT}`);
