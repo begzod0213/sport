@@ -111,7 +111,84 @@ bot.on('message', async (msg) => {
             keyword: '216',
             videoPath: 'https://t.me/terminator_kino_yulduzlar_jangi/186',
             caption: 'Bu Node.js dasturlash bo‘yicha darslik.'
-        }
+        },
+        {
+            keyword: '217',
+            videoPath: 'https://t.me/Chaqmoq_Makvin_Multfilim/1636',
+            caption:'💾NOMI :: ELEMENTAL 🇺🇿TIL:: OZBEK TILIDA  🖥️SFATI :: 480p ⏰OBUNA BOʻLISHNI UNUTMANG' 
+            
+           
+            
+        },
+        {
+            keyword: '218',
+            videoPath: 'https://t.me/Chaqmoq_Makvin_Multfilim/1656',
+            caption: '💾NOMI :: MUZLIK DAVRI 1 🇺🇿TIL:: OZBEK TILIDA 🖥️SFATI :: 480p ⏰OBUNA BOʻLISHNI UNUTMANG '
+ 
+
+
+        },
+        {
+            keyword: '219',
+            videoPath: 'https://t.me/jon_uik_kinolar_olami/101',
+            caption: 'Kino nomi: Himoyachilar 📂 Hajmi: 720.8 Mb tili:o`zbek tilida'
+        },
+        {
+            keyword: '220',
+            videoPath: 'https://t.me/jon_uik_kinolar_olami/16',
+            caption: 'Lyusi / Lusi 720p Oʻzbek tilida'
+        },
+        {
+            keyword: '221',
+            videoPath: 'https://t.me/jon_uik_kinolar_olami/226',
+            caption: 'Nomi: Qirol Arturning qilichi'
+        },
+        {
+            keyword: '222',
+            videoPath: 'https://t.me/Chaqmoq_Makvin_Multfilim/1634',
+            caption: 'NOMI :: KATTA XOʻJAYIN 1'
+        },
+        {
+            keyword: '223',
+            videoPath: 'https://t.me/Chaqmoq_Makvin_Multfilim/1677',
+            caption: '💾NOMI :: JAXILDOR QUSHLAR '
+        },
+        {
+            keyword: '224',
+            videoPath: 'https://t.me/Chaqmoq_Makvin_Multfilim/1666',
+            caption: '💾NOMI :: CHAQMOQ MAKVIN 1 🇺🇿TIL:: OZBEK TILIDA '
+
+        },
+        {
+            keyword: '225',
+            videoPath: 'https://t.me/kungfu_panda_multik_multfilm/30',
+            caption: 'Kungfu Panda to‘liq 1-qism  '
+
+        },
+        {
+            keyword: '226',
+            videoPath: 'https://t.me/kungfu_panda_multik_multfilm/32',
+            caption: 'Kungfu Panda to‘liq 3-qism  '
+
+        },
+        {
+            keyword: '227',
+            videoPath: 'https://t.me/Etik_kiygan_mushuk_2_uzb_tilida/1101',
+            caption: 'Tush qo`riqchilari'  
+
+        },
+        {
+            keyword: '228',
+            videoPath: 'https://t.me/Etik_kiygan_mushuk_2_uzb_tilida/6',
+            caption: 'Etik kiygan mushuk 2  '
+
+        },
+        {
+            keyword: '229',
+            videoPath: 'https://t.me/Etik_kiygan_mushuk_2_uzb_tilida/877',
+            caption: ' 🎬 ➺  Madagaskar 1'
+
+        },
     ];
     
     // Foydalanuvchi xabariga javob berish
@@ -123,6 +200,7 @@ bot.on('message', async (msg) => {
             bot.sendMessage(chatId, 'Iltimos, so‘rov uchun matn yuboring.');
             return;
         }
+
     
         // Video topib yuborish
         const reply = videoReplies.find((item) => text.includes(item.keyword));
@@ -132,10 +210,13 @@ bot.on('message', async (msg) => {
         } else {
             bot.sendMessage(chatId, 'Uzr, bu mavzuga oid video topilmadi.');
         }
+
     });
 const app = express();
 app.use(bodyParser.json());
 const PORT = process.env.PORT || 3000;
+
+
 //app.listen(PORT, () => {
    // console.log(`Server is running on port ${PORT}`);
 //})
