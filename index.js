@@ -13,6 +13,20 @@ const videoMap = {
     "205": "https://t.me/jon_uik_kinolar_olami/226",
     "206": "https://t.me/jon_uik_kinolar_olami/233",
     "207": "https://t.me/jon_uik_kinolar_olami/234",
+    "208": "https://t.me/terminator_kino_yulduzlar_jangi/154",
+    "209": "https://t.me/venom3_kinolar_uzb_tarjima_kino/625",
+    "210": "https://t.me/terminator_kino_yulduzlar_jangi/183",
+    "211": "https://t.me/terminator_kino_yulduzlar_jangi/178",
+    "212": "https://t.me/Umar_ibn_Hattob_seriali/26",
+    "213": "https://t.me/jon_uik_kinolar_olami/263",
+    "214": "https://t.me/kungfu_panda_multik_multfilm/30",
+    "215": "https://t.me/kungfu_panda_multik_multfilm/31",
+    "216": "https://t.me/kungfu_panda_multik_multfilm/32",
+    "217": "https://t.me/Chaqmoq_Makvin_Multfilim/1332",
+    "219": "https://t.me/terminator_kino_yulduzlar_jangi/148",
+    "220": "https://t.me/Chaqmoq_Makvin_Multfilim/1331",
+    "221": "https://t.me/terminator_kino_yulduzlar_jangi/186",
+    "222": "https://t.me/terminator_kino_yulduzlar_jangi/187"
     // Qo'shimcha kodlar...
 };
 
