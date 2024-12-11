@@ -17,15 +17,15 @@ const videoMap = {
     "209": "https://t.me/venom3_kinolar_uzb_tarjima_kino/625",
     "210": "https://t.me/terminator_kino_yulduzlar_jangi/183",
     "211": "https://t.me/terminator_kino_yulduzlar_jangi/178",
-    "212": "https://t.me/Umar_ibn_Hattob_seriali/26",
-    "213": "https://t.me/jon_uik_kinolar_olami/263",
+    
+   
     "214": "https://t.me/kungfu_panda_multik_multfilm/30",
     "215": "https://t.me/kungfu_panda_multik_multfilm/31",
     "216": "https://t.me/kungfu_panda_multik_multfilm/32",
     "217": "https://t.me/Chaqmoq_Makvin_Multfilim/1332",
     "219": "https://t.me/terminator_kino_yulduzlar_jangi/148",
     "220": "https://t.me/Chaqmoq_Makvin_Multfilim/1331",
-    "221": "https://t.me/terminator_kino_yulduzlar_jangi/186",
+    
     "222": "https://t.me/terminator_kino_yulduzlar_jangi/187"
     // Qo'shimcha kodlar...
 };
@@ -79,26 +79,64 @@ bot.on('message', async (msg) => {
     const isSubscribed = await checkSubscription(msg.from.id);
 
     if (!isSubscribed) {
-        bot.sendMessage(chatId, "❌ Siz kanalga obuna bo'lmadingiz. Iltimos, obuna bo'ling.");
+        bot.sendMessage(chatId, "❌ Siz kanalga obuna bo'lmadingiz. Iltimos, obuna bo'ling.", {
+            reply_markup: {
+                inline_keyboard: [
+                    [{ text: '📢 Obuna bo‘lish', url: CHANNEL_URL }],
+                    [{ text: '✅ Obunani qayta tekshirish', callback_data: 'check_subscription' }]
+                ]
+            }
+        });
+    
         return;
     }
 
-    const videoPath = videoMap[userMessage];
-    if (videoPath) {
-        try {
-            await bot.sendVideo(chatId, videoPath);
-            bot.sendMessage(chatId, "✅ Video yuborildi!");
-        } catch (err) {
-            bot.sendMessage(chatId, "❌ Video yuborishda xatolik yuz berdi.");
+    const videoReplies = [
+        {
+            keyword: '210',
+            videoPath: 'https://t.me/jon_uik_kinolar_olami/263',
+            caption: 'Bu HTML dasturlash bo‘yicha qo‘llanma.'
+        },
+        {
+            keyword: '212',
+            videoPath: ' https://t.me/Umar_ibn_Hattob_seriali/26',
+            caption: 'Bu CSS haqida asosiy qo‘llanma.'
+        },
+        {
+            keyword: '215',
+            videoPath: 'https://t.me/kungfu_panda_multik_multfilm/32',
+            caption: 'Bu JavaScript bo‘yicha darslik.'
+        },
+        {
+            keyword: '216',
+            videoPath: 'https://t.me/terminator_kino_yulduzlar_jangi/186',
+            caption: 'Bu Node.js dasturlash bo‘yicha darslik.'
         }
-    } else {
-        bot.sendMessage(chatId, "❌ Bunday kodga mos video topilmadi.");
-    }
-});
-
+    ];
+    
+    // Foydalanuvchi xabariga javob berish
+    bot.on('message', (msg) => {
+        const chatId = msg.chat.id;
+        const text = msg.text?.toLowerCase(); // Xabarni kichik harflarga o'girib olish
+    
+        if (!text) {
+            bot.sendMessage(chatId, 'Iltimos, so‘rov uchun matn yuboring.');
+            return;
+        }
+    
+        // Video topib yuborish
+        const reply = videoReplies.find((item) => text.includes(item.keyword));
+    
+        if (reply) {
+            bot.sendVideo(chatId, reply.videoPath, { caption: reply.caption });
+        } else {
+            bot.sendMessage(chatId, 'Uzr, bu mavzuga oid video topilmadi.');
+        }
+    });
 const app = express();
 app.use(bodyParser.json());
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
+})
 });
