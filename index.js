@@ -95,17 +95,17 @@ bot.on('message', async (msg) => {
         {
             keyword: '210',
             videoPath: 'https://t.me/jon_uik_kinolar_olami/263',
-            caption: 'Bu HTML dasturlash bo‘yicha qo‘llanma.'
+            caption: 'Kino nomi:Reacher. tili:o`zbek tilida. Hajmi:1092 MB '
         },
         {
             keyword: '212',
             videoPath: ' https://t.me/Umar_ibn_Hattob_seriali/26',
-            caption: 'Bu CSS haqida asosiy qo‘llanma.'
+            caption: 'Kino nomi: Umar ibn Xattob. tili:o`zbek tilida. Hajmi'
         },
         {
             keyword: '215',
             videoPath: 'https://t.me/kungfu_panda_multik_multfilm/32',
-            caption: 'Bu JavaScript bo‘yicha darslik.'
+            caption: 'Multfilm nomi: Kungfu panda tili:O`zbek tilida'
         },
         {
             keyword: '216',
