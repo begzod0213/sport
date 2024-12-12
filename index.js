@@ -10,6 +10,12 @@ const bot = new TelegramBot(TOKEN, { polling: true });
 
 const videoReplies = [
     { keyword: '210', videoPath: 'https://t.me/jon_uik_kinolar_olami/263', caption: 'Kino nomi:Reacher. tili:o`zbek tilida. Hajmi:1092 MB ' },
+    { keyword: '211', videoPath: 'https://t.me/Etik_kiygan_mushuk_2_uzb_tilida/606', caption: '🎬 Muzlik davri 2:Sifati: 480pTili: 🇺🇿O`zbek tilida ' },
+
+
+    { keyword: '212', videoPath: 'https://t.me/Etik_kiygan_mushuk_2_uzb_tilida/1129', caption: ' Maxluqlar tatilda 3  premyera❤️' },
+    { keyword: '213', videoPath: 'https://t.me/Etik_kiygan_mushuk_2_uzb_tilida/709', caption: 'Ajdar o`rgatuvchilari' },
+    { keyword: '214', videoPath: 'https://t.me/Etik_kiygan_mushuk_2_uzb_tilida/710', caption: 'Ajdar o`rgatuvchilari 2' },
     { keyword: '215', videoPath: 'https://t.me/kungfu_panda_multik_multfilm/32', caption: 'Multfilm nomi: Kungfu panda tili:O`zbek tilida' },
     { keyword: '216', videoPath: 'https://t.me/terminator_kino_yulduzlar_jangi/186', caption: 'Kino nomi: Creed' },
     { keyword: '217', videoPath: 'https://t.me/Chaqmoq_Makvin_Multfilim/1636', caption: '💾NOMI :: ELEMENTAL 🇺🇿TIL:: OZBEK TILIDA  🖥️SFATI :: 480p ⏰OBUNA BOʻLISHNI UNUTMANG' },
@@ -25,6 +31,13 @@ const videoReplies = [
     { keyword: '227', videoPath: 'https://t.me/Etik_kiygan_mushuk_2_uzb_tilida/1101', caption: 'Tush qo`riqchilari' },
     { keyword: '228', videoPath: 'https://t.me/Etik_kiygan_mushuk_2_uzb_tilida/6', caption: 'Etik kiygan mushuk 2 ' },
     { keyword: '229', videoPath: 'https://t.me/Etik_kiygan_mushuk_2_uzb_tilida/877', caption: ' 🎬 ➺  Madagaskar 1' },
+    { keyword: '230', videoPath: 'https://t.me/tarjima_kino_baza_filim_serial/8009', caption: ' 🎬 ➺ Transformerlar 2' },
+    { keyword: '231', videoPath: 'https://t.me/Transformerlar_6_uzb/132', caption: ' 🎬Nomi: Godzila Konga qarshi Yangi imperya ' },
+    { keyword: '232', videoPath: 'https://t.me/Transformerlar_6_uzb/48', caption: '🎬 ➺ Xitoylik Savdogar 🇺🇿 ➺ O`zbek Tilida ' }, 
+
+    { keyword: '233', videoPath: 'https://t.me/Etik_kiygan_mushuk_2_uzb_tilida/719', caption: '  Nomi: Ilya muromist va hushtagchi qaroqchi ' },
+    { keyword: '234', videoPath: 'https://t.me/Etik_kiygan_mushuk_2_uzb_tilida/733', caption: ' 🔸 Grinch. O`zbek tilida' },
+    
 ];
 
 async function checkSubscription(userId) {
