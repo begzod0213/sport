@@ -9,6 +9,17 @@ const CHANNEL_URL = 'https://t.me/brendrows0213';
 const bot = new TelegramBot(TOKEN, { polling: true });
 
 const videoReplies = [
+
+    
+    
+    
+    
+    { keyword: '205', videoPath: 'https://t.me/Etik_kiygan_mushuk_2_uzb_tilida/1036', caption: '🎬 ➺ Uch bahodir katta poyga ' },
+    { keyword: '206', videoPath: 'https://t.me/Etik_kiygan_mushuk_2_uzb_tilida/1020', caption: '📽️<>𝑁𝑜𝑚: Shrek2 ' },
+    { keyword: '207', videoPath: 'https://t.me/Etik_kiygan_mushuk_2_uzb_tilida/1017', caption: '📽️<>𝑁𝑜𝑚: Megamiyya ' },
+    { keyword: '208', videoPath: 'https://t.me/Etik_kiygan_mushuk_2_uzb_tilida/1016', caption: 'Kino nomi:Shrek ' },
+    { keyword: '209', videoPath: 'https://t.me/Etik_kiygan_mushuk_2_uzb_tilida/1034', caption: '🎬 ➺ Uch bahodir dengiz ortida' },
+    
     { keyword: '210', videoPath: 'https://t.me/jon_uik_kinolar_olami/263', caption: 'Kino nomi:Reacher. tili:o`zbek tilida. Hajmi:1092 MB ' },
     { keyword: '211', videoPath: 'https://t.me/Etik_kiygan_mushuk_2_uzb_tilida/606', caption: '🎬 Muzlik davri 2:Sifati: 480pTili: 🇺🇿O`zbek tilida ' },
 
@@ -37,7 +48,9 @@ const videoReplies = [
 
     { keyword: '233', videoPath: 'https://t.me/Etik_kiygan_mushuk_2_uzb_tilida/719', caption: '  Nomi: Ilya muromist va hushtagchi qaroqchi ' },
     { keyword: '234', videoPath: 'https://t.me/Etik_kiygan_mushuk_2_uzb_tilida/733', caption: ' 🔸 Grinch. O`zbek tilida' },
-    
+    { keyword: '235', videoPath: 'https://t.me/Avaz_Oxun_kanali/9419', caption: ' Avaz Oxun - 10 yillik yubiley konsert dasturi 2023' },
+    { keyword: '236', videoPath: 'https://t.me/Muhammad_ollohning_elchisii/3', caption: ' Muhammad Allohning elchisi' },
+    //{ keyword: '234', videoPath: 'https://t.me/Etik_kiygan_mushuk_2_uzb_tilida/733', caption: ' 🔸 Grinch. O`zbek tilida' },
 ];
 
 async function checkSubscription(userId) {
