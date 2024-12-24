@@ -50,6 +50,17 @@ const videoReplies = [
     { keyword: '234', videoPath: 'https://t.me/Etik_kiygan_mushuk_2_uzb_tilida/733', caption: ' 🔸 Grinch. O`zbek tilida' },
     { keyword: '235', videoPath: 'https://t.me/Avaz_Oxun_kanali/9419', caption: ' Avaz Oxun - 10 yillik yubiley konsert dasturi 2023' },
     { keyword: '236', videoPath: 'https://t.me/Muhammad_ollohning_elchisii/3', caption: ' Muhammad Allohning elchisi' },
+    { keyword: '237', videoPath: 'https://t.me/jon_uik_kinolar_olami/95', caption: 'Transformerlar 5' },
+    { keyword: '238', videoPath: 'https://t.me/c/1721090565/372', caption: '🎬Nomi: Ono'  },
+    { keyword: '239', videoPath: 'https://t.me/c/1721090565/361', caption: ' 🎬 O`G`RILAR ARMIYASI / TALONCHILAR' },
+    { keyword: '240', videoPath: 'https://t.me/c/1721090565/357', caption: ' Maymunlar Sayyorasi 1' },
+    { keyword: '241', videoPath: 'https://t.me/c/1721090565/342', caption: ' Gerakl' },
+    { keyword: '242', videoPath: 'https://t.me/Etik_kiygan_mushuk_2_uzb_tilida/891', caption: 'Muzyurak→ 📹2-qism' },
+    { keyword: '243', videoPath: 'https://t.me/Etik_kiygan_mushuk_2_uzb_tilida/789', caption: 'Hayvonlar shaxri' },
+    { keyword: '244', videoPath: 'https://t.me/Etik_kiygan_mushuk_2_uzb_tilida/775', caption: 'Yaxshi bo`lish osonmi 3' },
+    { keyword: '245', videoPath: 'https://t.me/Etik_kiygan_mushuk_2_uzb_tilida/734', caption: ' 🔸 Shimoliy ekspress' },
+    { keyword: '246', videoPath: 'https://t.me/Etik_kiygan_mushuk_2_uzb_tilida/723', caption: ' 🎬 ➺ Jaxldor Qushchalar 2 (2019)' },
+
     //{ keyword: '234', videoPath: 'https://t.me/Etik_kiygan_mushuk_2_uzb_tilida/733', caption: ' 🔸 Grinch. O`zbek tilida' },
 ];
 
